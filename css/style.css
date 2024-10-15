@@ -6,3 +6,70 @@
 tei-teiHeader {
   display: none;
 }
+
+
+:root {
+	box-sizing: border-box;
+}
+
+*,
+::before
+::after{
+	box-sizing: inherit;
+}
+
+.title {
+  text-align: center;
+	padding: 20px;
+	background-color: #f2e2ff;
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+.main-page {
+  padding: 20px; 
+}
+
+.nav-bar {
+  font-family: Arial;
+  background-color: rgb(19, 0, 37);
+  height: 50px;
+  overflow: hidden;
+}
+
+.nav-bar .nav-options {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-bar .nav-item {
+  display: inline-block;
+  height: 100%;
+  padding-top: 13px;
+  padding-left: 5%;
+}
+
+.nav-bar .nav-item a {
+  color: rgb(237, 214, 255);
+  font-size: 20px;
+  text-decoration: none;
+}
+
+
+.box {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+.box .header {
+ flex: 0 1 auto;
+}
+.box #app {
+  flex: 1 1 auto;
+}
