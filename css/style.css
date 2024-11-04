@@ -20,7 +20,7 @@ tei-teiHeader {
 
 .title {
   text-align: center;
-	padding: 20px;
+	padding: 5px;
 	background-color: #9257c2;
 }
 
@@ -36,7 +36,7 @@ body {
 .nav-bar {
   font-family: Arial;
   background-color: rgb(19, 0, 37);
-  height: 50px;
+  height: 70px;
   overflow: hidden;
 }
 
@@ -51,14 +51,18 @@ body {
 .nav-bar .nav-item {
   display: inline-block;
   height: 100%;
-  padding-top: 13px;
+  padding-top: 25px;
   padding-left: 5%;
 }
 
 .nav-bar .nav-item a {
   color: rgb(242, 224, 255);
-  font-size: 20px;
+  font-size: 21px;
   text-decoration: none;
+}
+
+.nav-bar .active a {
+  color: #9257c2;
 }
 
 
