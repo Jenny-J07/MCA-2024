@@ -61,6 +61,16 @@ body {
   text-decoration: none;
 }
 
+.nav-bar .nav-item a:hover{
+  color: rgb(142, 255, 132);
+  font-size: 23px;
+}
+
+.nav-bar .active a:hover{
+  font-size: 21px;
+  color: #9257c2;
+}
+
 .nav-bar .active a {
   color: #9257c2;
 }
