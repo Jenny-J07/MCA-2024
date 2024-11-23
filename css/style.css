@@ -30,7 +30,8 @@ body {
 }
 
 .main-page {
-  padding: 20px; 
+  padding: 30px; 
+  font-size: 17px;
 }
 
 .nav-bar {
@@ -87,3 +88,48 @@ body {
 .box #app {
   flex: 1 1 auto;
 }
+
+
+
+.grid_layout {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+
+	margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.section {
+  padding-top: 5px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.even {
+  background-color: rgb(251, 238, 255);
+}
+
+.odd {
+  background-color: rgb(240, 255, 238);
+}
+
+.analysis {
+  margin-left: 20%;
+  margin-right: 20%;
+  background-color: rgb(251, 238, 255);
+  padding: 25px;
+}
+
+
+.page-list ul li a{
+  text-decoration: none;
+  color: purple;
+}
+
+.page-list ul{ 
+  list-style: none;
+}
+
