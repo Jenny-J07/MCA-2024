@@ -3,7 +3,7 @@
   <title>Home</title>
 
   <link rel="stylesheet" href="../css/style.css">
-  <script src="js/CETEI.js"></script>
+  <script src="../js/CETEI.js"></script>
 </head>
 <body>
 
@@ -30,8 +30,27 @@
     <h2>Task 1: Updating MEI File Metadata</h2>
     <p> 
       
-      <b>Justification:</b>
-      
+      <b>Justification:</b><br>
+      I have added both the genres of the piece and a creative commons license to the mei file.
+      <br>
+      The genres added include: 
+      <ul>
+        <li>Gothic</li>
+        <li>Sacred Chant</li>
+        <li>Dark</li>
+        <li>Theatrical</li>
+      </ul>
+      These genres have been selected based off of similar music and from information online about my piece. I couldn't find an exact genre classification online 
+      so chose to base the genres in realation to similar music. 
+      <br><br>
+      For the copyright license, I worked throught the checklist on Creative Commons and answered the questions as if I owned this piece of music considering the best way to make 
+      the music accessible while not allowing it to be used for commercial purposes. This included making selections such as if I wanted attribution for the work. I selected yes for this, 
+      if anyone is using the work I would like attribution for it. I also selected non-commercial and then sharealike to allow for people to adapt the work but share it under the same license. 
+      This means that someone is allowed to adapt and share the work but the adaptation cannot be used for commercial purposes. 
+
+
+      The final license is - Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International.
+
     </p>
     <br>
 
@@ -51,7 +70,7 @@
          const app = new Verovio.App(document.getElementById("app"), {});
 
     // Load a file (MEI or MusicXML)
-    fetch("data/example.mei")
+    fetch("data/ballad_of_the_witches_road_week7.mei")
         .then(function(response) {
             return response.text();
         })
@@ -62,7 +81,7 @@
   <script>
     // Get, parse, and show TEI data
     var CETEIcean = new CETEI()
-    CETEIcean.getHTML5("data/example.mei", function(data) {
+    CETEIcean.getHTML5("data/ballad_of_the_witches_road_week7.mei", function(data) {
       document.getElementById("TEI").appendChild(data)
     })
     // Get, parse and show MEI header data
@@ -72,7 +91,7 @@
         mei: "http://www.music-encoding.org/ns/mei"
       }
     })
-    CETEI4MEI.getHTML5("data/example.mei", function(data) {
+    CETEI4MEI.getHTML5("data/ballad_of_the_witches_road_week7.mei", function(data) {
       // get header
       var meiHead = data.querySelector('mei-meiHead')
       document.getElementById("MEImeta").appendChild(meiHead)
@@ -86,7 +105,7 @@
         scale: 50,
         adjustPageHeight: true
     })
-    fetch("data/example.mei").then(function( response ) {
+    fetch("data/ballad_of_the_witches_road_week7.mei").then(function( response ) {
         response.text().then(function( data ) {
           var svg = vrvToolkit.renderData(data, {})
           document.getElementById('MEI').innerHTML = svg
