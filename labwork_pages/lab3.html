@@ -70,6 +70,27 @@
         </script>
         </div>
 
+        <br><br>
+
+        <div>
+          <h3>Difference between MEI and MusicXML:</h3>
+          In an MEI file, notes are contained within chords whereas in musicXML, the notes are all seperate in the file. With the additional indentation 
+          in the MEI file, I find this makes it easier to see which notes are part of each chord. 
+          <br><br>
+          In musicXML, inside the note tags there are seperate tags for things like pitch, octave, alter, etc. In comparison to 
+          MEI, some of these things are contained within the note and chord tags themselves, for example, &lt;note oct="4" ...&gt; 
+          <br><br>
+          The MEI file is much smaller with just over 900 lines in comparison to the musicXML file which has over 3700 lines. This makes sense 
+          given the musicXML file has sepeate tags for things inside of each note.   
+          <br><br>
+          In the MEI file, each tag has an xml:id attatched unlike in the musicXML file. Each of these id's are unique, this could be used for a tool like mei friend to 
+          track the notes that are being played.
+          <br><br>
+          Finally, in the musicXML file the ties are tags labelled with type = "start"/"stop". In contrast, in the MEI file, the tie tags are all grouped together and 
+          have a startid and endid label that correspond to the note ids.
+
+
+        </div>
 
 
 
