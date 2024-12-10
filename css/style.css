@@ -1,4 +1,12 @@
-/* Add your own CSS rules here */
+/* 
+Some inspiration for my navigation bar was taken from my Multimedia Analysis and Design website.
+This can be accessed here - https://jenny-j07.github.io/GamesInEducation/index.html
+
+I also looked at w3schools to find out more information about css.
+This can be accessed here - https://www.w3schools.com/css/
+*/
+
+
 #description {
   margin: 0 0 1em 0;
 }
@@ -32,6 +40,11 @@ body {
 .main-page {
   padding: 30px; 
   font-size: 17px;
+}
+
+#front-page {
+
+  line-height: 150%;
 }
 
 .nav-bar {
@@ -151,4 +164,15 @@ table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
   padding: 10px;
+}
+
+footer { 
+  background-color: rgb(19, 0, 37);
+  color: rgb(242, 224, 255);
+  height: 100px;
+  text-align: center;
+}
+
+footer p {
+  padding: 40px;
 }
