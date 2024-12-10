@@ -61,7 +61,7 @@
       If there are any issues with the rendering of the MEI file below, please click this link to view - <a href="../metaRAW.html">Rendered MEI file with metadata</a>.
       <br><br>
 
-      <b>How I would render my metadata:</b>
+      <b>How I would render my metadata:</b><br>
       I would render my metadata by giving each section a clear title or tag. This would help to section the names so that 
       they aren't jumbled together without an indication of why they are there. I would make sure to add in spacing between each 
       item to make it easier to read everything. I would also space it out from the score. I also think it would be good (if possible) 
@@ -87,7 +87,7 @@
         const app = new Verovio.App(document.getElementById("app"), {});
 
     // Load a file (MEI or MusicXML)
-    fetch("data/ballad_of_the_witches_road_week7.mei")
+    fetch("../data/ballad_of_the_witches_road_week7.mei")
         .then(function(response) {
             return response.text();
         })
@@ -98,7 +98,7 @@
   <script>
     // Get, parse, and show TEI data
     var CETEIcean = new CETEI()
-    CETEIcean.getHTML5("data/ballad_of_the_witches_road_week7.mei", function(data) {
+    CETEIcean.getHTML5("../data/ballad_of_the_witches_road_week7.mei", function(data) {
       document.getElementById("TEI").appendChild(data)
     })
     // Get, parse and show MEI header data
@@ -108,7 +108,7 @@
         mei: "http://www.music-encoding.org/ns/mei"
       }
     })
-    CETEI4MEI.getHTML5("data/ballad_of_the_witches_road_week7.mei", function(data) {
+    CETEI4MEI.getHTML5("../data/ballad_of_the_witches_road_week7.mei", function(data) {
       // get header
       var meiHead = data.querySelector('mei-meiHead')
       document.getElementById("MEImeta").appendChild(meiHead)
@@ -122,7 +122,7 @@
         scale: 50,
         adjustPageHeight: true
     })
-    fetch("data/ballad_of_the_witches_road_week7.mei").then(function( response ) {
+    fetch("../data/ballad_of_the_witches_road_week7.mei").then(function( response ) {
         response.text().then(function( data ) {
           var svg = vrvToolkit.renderData(data, {})
           document.getElementById('MEI').innerHTML = svg
